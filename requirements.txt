@@ -1,0 +1,2 @@
+psutil~=5.9.8
+humanize~=4.9.0
