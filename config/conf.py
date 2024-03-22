@@ -3,4 +3,4 @@ DEFAULT_PATH = "/"
 
 MONITOR_PORT = 7197
 
-MONITORING_ENDPOINT ='/node/system/status'
+MONITORING_ENDPOINT = '/node/system/status'
