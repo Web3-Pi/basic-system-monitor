@@ -57,7 +57,7 @@ class SystemSample:
 
         hdu = h(self.disk_used)
 
-        m = f"HOST: {self.host_name}" \
+        m = f"HOST: {self.host_name}\n" \
             f"CPU: cores {self.num_cores}, load: {self.cpu_percent}%\n" \
             f"MEM: total {hmt}, used {hmu}, free {hmf}, percent {self.mem_percent}%\n" \
             f"SWAP: total {hst}, used {hsu}, free {hsf} percent {self.swap_percent}%\n" \
