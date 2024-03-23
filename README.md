@@ -27,16 +27,18 @@ How to install (Ubuntu):
 - Prerequisites
   - If necessary, configure github PAT - for details, refer to [README.md](https://github.com/Web3-Pi/web3-reverse-proxy/blob/main/README.md)
   - If necessary, install Python 3.11 and update the system configuration - more details in [README.md](https://github.com/Web3-Pi/web3-reverse-proxy/blob/main/README.md)
-  - If during the installation of requirements there is a problem with 'psutils', run this command to install the required packages:
-  ```shell
-  sudo apt-get install gcc python3-dev libpython3.11-dev
-  ```
 - Monitor
 ```shell
 cd APPROPRIATE_DIRECTORY
 git clone https://github.com/Web3-Pi/basic-system-monitor.git
 cd basic-system-monitor
 python3 -m venv venv
+python -m pip install -r requirements.txt
+deactivate
+```
+- If during the installation of requirements there is a problem with `psutils`, run this command to install the required packages:
+```shell
+sudo apt-get install gcc python3-dev libpython3.11-dev
 ```
 
 ### Simple use
