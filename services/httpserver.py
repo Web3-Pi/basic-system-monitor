@@ -44,7 +44,9 @@ class MonitoringHTTPServer(socketserver.TCPServer):
         addr = ('', port)
         httpd = MonitoringHTTPServer(addr, MonitoringServerRequestHandler)
 
-        print(f"Starting HTTP server, listening on port {addr[1]}, data available via endpoint {MONITORING_ENDPOINT}")
+        print(f"Starting HTTP server\n"
+              f"    Listening on port:           {addr[1]}\n"
+              f"    Data available via endpoint: {MONITORING_ENDPOINT}")
         httpd.monitor.start()
 
         try:

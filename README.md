@@ -48,6 +48,18 @@ python3 system_monitor.py  # Ctrl-c to shut down the monitor
 deactivate
 ```
 
+Command line parameters accepted by the script:
+```shell
+usage: system_monitor.py [-h] [-p PORT]
+
+A simple monitoring tool with a HTTP endpoint
+
+options:
+  -h, --help            show this help message and exit
+  -p PORT, --port PORT  HTTP server listen port (default: 7197)
+
+```
+
 ## Examples
 
 ### Running with a screen session
