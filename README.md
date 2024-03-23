@@ -4,7 +4,7 @@ Simplistic system monitor based on `psutils` with a dedicated http endpoint.
 It was initially developed on **Windows 10 Pro** with **PyCharm 2022.3.1 (Community Edition)** and **Python 3.11**.
 
 ## Configure and Run
-To configure and run this project, follow this [README.md](https://github.com/jimmyisthis/web3-reverse-proxy/blob/main/README.md) regarding the Python configuration and the virtualenv use.
+To configure and run this project, follow this [README.md](https://github.com/Web3-Pi/web3-reverse-proxy/blob/main/README.md) regarding the Python configuration and the virtualenv use.
 
 ## Stats Monitoring
 
@@ -25,8 +25,8 @@ To change the monitored directory, set the required value to a variable:
 ### Installation
 How to install (Ubuntu):
 - Prerequisites
-  - If necessary, configure github PAT - for details, refer to [README.md](https://github.com/jimmyisthis/web3-reverse-proxy/blob/main/README.md)
-  - If necessary, install Python 3.11 and update the system configuration - more details in [README.md](https://github.com/jimmyisthis/web3-reverse-proxy/blob/main/README.md)
+  - If necessary, configure github PAT - for details, refer to [README.md](https://github.com/Web3-Pi/web3-reverse-proxy/blob/main/README.md)
+  - If necessary, install Python 3.11 and update the system configuration - more details in [README.md](https://github.com/Web3-Pi/web3-reverse-proxy/blob/main/README.md)
   - If during the installation of requirements there is a problem with 'psutils', run this command to install the required packages:
   ```shell
   sudo apt-get install gcc python3-dev libpython3.11-dev
