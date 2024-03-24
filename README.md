@@ -33,6 +33,7 @@ cd APPROPRIATE_DIRECTORY
 git clone https://github.com/Web3-Pi/basic-system-monitor.git
 cd basic-system-monitor
 python3 -m venv venv
+source venv/bin/activate
 python3 -m pip install -r requirements.txt
 deactivate
 ```
