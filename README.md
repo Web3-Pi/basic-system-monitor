@@ -20,7 +20,7 @@ To start the monitoring service
   - **/node/system/status** (variable **MONITORING_ENDPOINT** located in _config/conf.py_)
 
 To change the monitored directory, set the required value to a variable:
-- **DEFAULT_PATHL** located in _config/conf.py_ (currently it should be set either to _~/.ethereum_ or _~/.lighthouse_).
+- **DEFAULT_PATH** located in _config/conf.py_ (currently it should be set either to _~/.ethereum_ or _~/.lighthouse_).
 
 ### Installation
 How to install (Ubuntu):
