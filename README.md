@@ -37,6 +37,10 @@ source venv/bin/activate
 python3 -m pip install -r requirements.txt
 deactivate
 ```
+- If there are problems during venv creation, install required package:
+```shell
+sudo apt install python3.11-venv
+```
 - If during the installation of requirements there is a problem with `psutils`, run this command to install the required packages:
 ```shell
 sudo apt-get install gcc python3-dev libpython3.11-dev
