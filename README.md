@@ -41,7 +41,7 @@ deactivate
 ```shell
 sudo apt install python3.11-venv
 ```
-- If during the installation of requirements there is a problem with `psutils`, run this command to install the required packages:
+- If during the installation of requirements there is a problem with `psutils`, run this command to install the required packages (and then, install the requirements):
 ```shell
 sudo apt-get install gcc python3-dev libpython3.11-dev
 ```
