@@ -2,7 +2,7 @@ import json
 import socketserver
 from http.server import BaseHTTPRequestHandler
 
-from config.conf import MONITOR_PORT, MONITORING_ENDPOINT
+from config.conf import MONITOR_PORT, MONITORING_ENDPOINT, DEFAULT_PATH
 from services.systemmonitor import SystemMonitor
 
 
@@ -45,8 +45,10 @@ class MonitoringHTTPServer(socketserver.TCPServer):
         httpd = MonitoringHTTPServer(addr, MonitoringServerRequestHandler)
 
         print(f"Starting HTTP server\n"
-              f"    Listening on port:           {addr[1]}\n"
-              f"    Data available via endpoint: {MONITORING_ENDPOINT}")
+              f"    Listening on port:                         {addr[1]}\n"
+              f"    Data available via endpoint:               {MONITORING_ENDPOINT}\n"
+              f"    Disk data based on a partition containing: {DEFAULT_PATH}")
+
         httpd.monitor.start()
 
         try:
