@@ -21,6 +21,7 @@ To start the monitoring service
 
 To change the monitored directory, set the required value to a variable:
 - **DEFAULT_PATH** located in _config/conf.py_ (currently it should be set either to _~/.ethereum_ or _~/.lighthouse_).
+- `psutil` will query the partition on which the specified directory is located
 
 ### Installation
 How to install (Ubuntu):
