@@ -14,11 +14,13 @@ class MonitoringServerRequestHandler(BaseHTTPRequestHandler):
 
             self.send_response(200)
             self.send_header('Content-Type', 'application/json')
+            self.send_header('Access-Control-Allow-Origin', '*')
             self.end_headers()
             self.wfile.write(json.dumps(self.server.monitor.get_last_sample().to_dict()).encode("UTF-8"))
         else:
             self.send_response(401)
             self.send_header("Content-type", "text/html")
+            self.send_header('Access-Control-Allow-Origin', '*')
             self.end_headers()
 
             response = '<!DOCTYPE html><html><head><title>Unauthorized</title></head><body><h1>You are not authorized '\
